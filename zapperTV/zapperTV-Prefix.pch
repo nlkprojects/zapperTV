@@ -6,13 +6,20 @@
 
 #import <Availability.h>
 
-#ifndef __IPHONE_3_0
-#warning "This project uses features only available in iOS SDK 3.0 and later."
+#ifndef __IPHONE_6_0
+#warning "This project uses features only available in iOS SDK 6.0 and later."
 #endif
 
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
-
     #import <Foundation/Foundation.h>
-
+    #define kZCAPIURL_NOSSL      @"http"
+    #define kZCAPIURL_SSL        @"https"
+    #define kZCAPIDataFormatJSON @".json"
+    #define kZCAPIDataFormatXML  @".xml"
+    #define kTRAKTAPIKEY         @"e4e7b3fa04002d7bd9907fbab553dcc9b24c6210"
+    #define FANART_API           @"443173c3859cab33352df87d993d4f4b"
+    #define kGoogleAPIKey        @"AIzaSyAA9tdIS8Y3hj8pkpsiLgWxl553WQOCSv4"
+    #define kTheMovieDBAPIKey    @"3684f85d65cbd864b58d35d80053f5b4"
+    #define kTVDBAPI             @"1D64BE37A1157065"
 #endif

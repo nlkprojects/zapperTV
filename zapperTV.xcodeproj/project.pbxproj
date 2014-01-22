@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C8C507037A2DBBD67BDA8F4 /* ZTVTraktConstants.h in Resources */ = {isa = PBXBuildFile; fileRef = 3C8C551F0ACA4A0CB113115C /* ZTVTraktConstants.h */; };
 		3C8C50F32CAA69D61F2055B0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C5FF034436F39DC0B5F76 /* XCTest.framework */; };
 		3C8C51F824819E0B915E4E8D /* zapperTVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C5A55161309A57D03491E /* zapperTVTests.m */; };
 		3C8C5217E0588B8413DE167C /* ZTVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C539145D8ED7C0DC909FE /* ZTVAppDelegate.m */; };
 		3C8C521E3C7C4D173E32DD5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C54EA720849A1B651881D /* UIKit.framework */; };
 		3C8C54775A1129EAE9B3A23B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C8C5C8317128FDDED6C7AE0 /* InfoPlist.strings */; };
 		3C8C552386A9AAEEFEC08381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C577CB243FF06B5D86C6F /* Foundation.framework */; };
+		3C8C57F0B8214BA0051C0F1E /* ZTVDefaultRestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C51CB5A429ADA6C5D38B3 /* ZTVDefaultRestHandler.m */; };
 		3C8C5867784ABAFB72FDE21E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8C594219C523972936CBAC /* Images.xcassets */; };
 		3C8C5912DD5DFAA2F8F39C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C5BF01F9D769E9B794632 /* main.m */; };
 		3C8C598662C1AF25FE9EEB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C577CB243FF06B5D86C6F /* Foundation.framework */; };
 		3C8C5A170703BC03D4A446F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C8C5B39BB3FEE5234F5FC01 /* InfoPlist.strings */; };
 		3C8C5A2AEA53A04012132F02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C568BACF1E1725153B702 /* CoreGraphics.framework */; };
 		3C8C5A822A99D4B72400516F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C54EA720849A1B651881D /* UIKit.framework */; };
+		FEF49C213B7B43ECBAE54435 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD45F26ECC44CAD82B2B6BD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B18BFC788274334AC20C7BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		3C8C50DFB957F11557B8ED7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C8C51CB5A429ADA6C5D38B3 /* ZTVDefaultRestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVDefaultRestHandler.m; sourceTree = "<group>"; };
 		3C8C539145D8ED7C0DC909FE /* ZTVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTVAppDelegate.m; sourceTree = "<group>"; };
 		3C8C548C6096A6618039AE96 /* zapperTV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "zapperTV-Info.plist"; sourceTree = "<group>"; };
 		3C8C54EA720849A1B651881D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C8C551F0ACA4A0CB113115C /* ZTVTraktConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVTraktConstants.h; sourceTree = "<group>"; };
 		3C8C5525927B562C1D6BCDD7 /* ZTVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTVAppDelegate.h; sourceTree = "<group>"; };
 		3C8C568BACF1E1725153B702 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3C8C577CB243FF06B5D86C6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,8 +52,10 @@
 		3C8C5BF01F9D769E9B794632 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C8C5C42F418BDDDB9BD934A /* zapperTVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "zapperTVTests-Info.plist"; sourceTree = "<group>"; };
 		3C8C5DD3A337A12393472308 /* zapperTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zapperTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8C5E9BD8276512E728972E /* ZTVDefaultRestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVDefaultRestHandler.h; sourceTree = "<group>"; };
 		3C8C5FE5E23DF26AB419B1E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C8C5FF034436F39DC0B5F76 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8BD45F26ECC44CAD82B2B6BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +76,28 @@
 				3C8C598662C1AF25FE9EEB40 /* Foundation.framework in Frameworks */,
 				3C8C5A2AEA53A04012132F02 /* CoreGraphics.framework in Frameworks */,
 				3C8C521E3C7C4D173E32DD5E /* UIKit.framework in Frameworks */,
+				FEF49C213B7B43ECBAE54435 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C8C52ED3CE6FAB06AA1743F /* trakt */ = {
+			isa = PBXGroup;
+			children = (
+				3C8C551F0ACA4A0CB113115C /* ZTVTraktConstants.h */,
+			);
+			path = trakt;
+			sourceTree = "<group>";
+		};
+		3C8C538AD5078964A103AF89 /* themoviedb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = themoviedb;
+			sourceTree = "<group>";
+		};
 		3C8C54C0613B27AAF84424DD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,7 @@
 				3C8C58DCD2F34EF218F2ABC7 /* Frameworks */,
 				3C8C5D41697C2E06249890AB /* zapperTV */,
 				3C8C5A5308DF64AADBAF8A17 /* zapperTVTests */,
+				2B18BFC788274334AC20C7BC /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +127,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3C8C5803043CA83618164436 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		3C8C58DCD2F34EF218F2ABC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +141,16 @@
 				3C8C568BACF1E1725153B702 /* CoreGraphics.framework */,
 				3C8C54EA720849A1B651881D /* UIKit.framework */,
 				3C8C5FF034436F39DC0B5F76 /* XCTest.framework */,
+				8BD45F26ECC44CAD82B2B6BD /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C8C5A240E36970FA5FAB8C7 /* db */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = db;
 			sourceTree = "<group>";
 		};
 		3C8C5A5308DF64AADBAF8A17 /* zapperTVTests */ = {
@@ -120,6 +160,15 @@
 				3C8C5A55161309A57D03491E /* zapperTVTests.m */,
 			);
 			path = zapperTVTests;
+			sourceTree = "<group>";
+		};
+		3C8C5C01071572F9891C1012 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3C8C5A240E36970FA5FAB8C7 /* db */,
+				3C8C5D13E2AA90202C3214D9 /* api */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		3C8C5C1C07220C15FDE8B7BF /* Supporting Files */ = {
@@ -133,6 +182,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3C8C5D13E2AA90202C3214D9 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				3C8C52ED3CE6FAB06AA1743F /* trakt */,
+				3C8C538AD5078964A103AF89 /* themoviedb */,
+				3C8C51CB5A429ADA6C5D38B3 /* ZTVDefaultRestHandler.m */,
+				3C8C5E9BD8276512E728972E /* ZTVDefaultRestHandler.h */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		3C8C5D41697C2E06249890AB /* zapperTV */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +200,18 @@
 				3C8C5525927B562C1D6BCDD7 /* ZTVAppDelegate.h */,
 				3C8C539145D8ED7C0DC909FE /* ZTVAppDelegate.m */,
 				3C8C594219C523972936CBAC /* Images.xcassets */,
+				3C8C5C01071572F9891C1012 /* model */,
+				3C8C5803043CA83618164436 /* view */,
+				3C8C5F3E2FC1895A7009DE2A /* controller */,
 			);
 			path = zapperTV;
+			sourceTree = "<group>";
+		};
+		3C8C5F3E2FC1895A7009DE2A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C8C5AFEE460713F0F130CA4 /* Build configuration list for PBXNativeTarget "zapperTV" */;
 			buildPhases = (
+				880CEF99265942BD9312C6D7 /* Check Pods Manifest.lock */,
 				3C8C5B87C9EFE4ADF11FCECB /* Sources */,
 				3C8C59DA9594005DEEEE94F6 /* Frameworks */,
 				3C8C5941F4FBCCD80570A368 /* Resources */,
+				97A12C95094647D488BF7FC3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +260,7 @@
 		3C8C584E6862166F272C1408 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZTV;
 				ORGANIZATIONNAME = nlkprojects;
 			};
 			buildConfigurationList = 3C8C5153EA00AB572C647957 /* Build configuration list for PBXProject "zapperTV" */;
@@ -200,6 +273,8 @@
 			mainGroup = 3C8C54C0613B27AAF84424DD;
 			productRefGroup = 3C8C55311E8A6A853F525388 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				3C8C57DDF7F3D041B24D2213 /* zapperTV */,
@@ -223,10 +298,44 @@
 			files = (
 				3C8C54775A1129EAE9B3A23B /* InfoPlist.strings in Resources */,
 				3C8C5867784ABAFB72FDE21E /* Images.xcassets in Resources */,
+				3C8C507037A2DBBD67BDA8F4 /* ZTVTraktConstants.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		880CEF99265942BD9312C6D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97A12C95094647D488BF7FC3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C8C53F82093CF961BB20589 /* Sources */ = {
@@ -243,6 +352,7 @@
 			files = (
 				3C8C5912DD5DFAA2F8F39C1E /* main.m in Sources */,
 				3C8C5217E0588B8413DE167C /* ZTVAppDelegate.m in Sources */,
+				3C8C57F0B8214BA0051C0F1E /* ZTVDefaultRestHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +388,7 @@
 /* Begin XCBuildConfiguration section */
 		3C8C5790F7C31D4607444479 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B18BFC788274334AC20C7BC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -361,6 +472,7 @@
 		};
 		3C8C5CADD9B7420289DAD5E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B18BFC788274334AC20C7BC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

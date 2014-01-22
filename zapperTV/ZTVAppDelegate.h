@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+-(void)postNotification:(NSString *)notification forObject:(id)object  withUserInfo:(NSDictionary *)userInfo;
+
 @end
