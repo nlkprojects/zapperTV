@@ -273,8 +273,6 @@
 			mainGroup = 3C8C54C0613B27AAF84424DD;
 			productRefGroup = 3C8C55311E8A6A853F525388 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				3C8C57DDF7F3D041B24D2213 /* zapperTV */,
@@ -528,6 +526,7 @@
 				3C8C585E5D5DE0C514ACA579 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C8C5153EA00AB572C647957 /* Build configuration list for PBXProject "zapperTV" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +544,7 @@
 				3C8C5790F7C31D4607444479 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
