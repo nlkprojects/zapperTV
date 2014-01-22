@@ -1,4 +1,4 @@
 zapperTV
 ========
 
-Enternment's best friend. The goto app for everything TV and movies
+Entertainment's best friend. The goto app for everything TV and movies!
