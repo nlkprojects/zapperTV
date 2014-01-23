@@ -7,6 +7,7 @@
 //
 
 #import "ZTVAppDelegate.h"
+#import "TestFlight.h"
 
 @implementation ZTVAppDelegate
 
@@ -21,6 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [TestFlight takeOff:@"8fdc9e66-1726-4700-9098-bad0a2b3ce42"];
     return YES;
 }
 

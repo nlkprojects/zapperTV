@@ -14,6 +14,7 @@
 		3C8C521E3C7C4D173E32DD5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C54EA720849A1B651881D /* UIKit.framework */; };
 		3C8C54775A1129EAE9B3A23B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C8C5C8317128FDDED6C7AE0 /* InfoPlist.strings */; };
 		3C8C552386A9AAEEFEC08381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8C577CB243FF06B5D86C6F /* Foundation.framework */; };
+		3C8C55A47E8B2080174CDC7C /* ZTVDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C5CE9D408EBF4AA50E7A1 /* ZTVDatabaseManager.m */; };
 		3C8C57F0B8214BA0051C0F1E /* ZTVDefaultRestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C51CB5A429ADA6C5D38B3 /* ZTVDefaultRestHandler.m */; };
 		3C8C5867784ABAFB72FDE21E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8C594219C523972936CBAC /* Images.xcassets */; };
 		3C8C5912DD5DFAA2F8F39C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C5BF01F9D769E9B794632 /* main.m */; };
@@ -52,8 +53,10 @@
 		3C8C5A55161309A57D03491E /* zapperTVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zapperTVTests.m; sourceTree = "<group>"; };
 		3C8C5BF01F9D769E9B794632 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C8C5C42F418BDDDB9BD934A /* zapperTVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "zapperTVTests-Info.plist"; sourceTree = "<group>"; };
+		3C8C5CE9D408EBF4AA50E7A1 /* ZTVDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVDatabaseManager.m; sourceTree = "<group>"; };
 		3C8C5DD3A337A12393472308 /* zapperTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zapperTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8C5E9BD8276512E728972E /* ZTVDefaultRestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVDefaultRestHandler.h; sourceTree = "<group>"; };
+		3C8C5EE993A4B474AC08C82F /* ZTVDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVDatabaseManager.h; sourceTree = "<group>"; };
 		3C8C5FE5E23DF26AB419B1E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C8C5FF034436F39DC0B5F76 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8BD45F26ECC44CAD82B2B6BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +154,8 @@
 		3C8C5A240E36970FA5FAB8C7 /* db */ = {
 			isa = PBXGroup;
 			children = (
+				3C8C5CE9D408EBF4AA50E7A1 /* ZTVDatabaseManager.m */,
+				3C8C5EE993A4B474AC08C82F /* ZTVDatabaseManager.h */,
 			);
 			path = db;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				3C8C5912DD5DFAA2F8F39C1E /* main.m in Sources */,
 				3C8C5217E0588B8413DE167C /* ZTVAppDelegate.m in Sources */,
 				3C8C57F0B8214BA0051C0F1E /* ZTVDefaultRestHandler.m in Sources */,
+				3C8C55A47E8B2080174CDC7C /* ZTVDatabaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,9 +404,41 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zapperTV/zapperTV-Prefix.pch";
 				INFOPLIST_FILE = "zapperTV/zapperTV-Info.plist";
+				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lTestFlight",
+					"-lsqlite3",
+					"-lz",
+					"-framework",
+					AddressBook,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CouchbaseLite,
+					"-framework",
+					CouchbaseLiteListener,
+					"-framework",
+					Foundation,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					UIKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -486,7 +524,37 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zapperTV/zapperTV-Prefix.pch";
 				INFOPLIST_FILE = "zapperTV/zapperTV-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lTestFlight",
+					"-lsqlite3",
+					"-lz",
+					"-framework",
+					AddressBook,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CouchbaseLite,
+					"-framework",
+					CouchbaseLiteListener,
+					"-framework",
+					Foundation,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					UIKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
