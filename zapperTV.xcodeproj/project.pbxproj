@@ -44,6 +44,7 @@
 		3C8C551F0ACA4A0CB113115C /* ZTVTraktConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVTraktConstants.h; sourceTree = "<group>"; };
 		3C8C5525927B562C1D6BCDD7 /* ZTVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTVAppDelegate.h; sourceTree = "<group>"; };
 		3C8C568BACF1E1725153B702 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C8C56BE15E03EF8A47C6619 /* ZTVTheMovieDBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVTheMovieDBConstants.h; sourceTree = "<group>"; };
 		3C8C577CB243FF06B5D86C6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C8C57E72331E1DB2282EFB0 /* zapperTV-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zapperTV-Prefix.pch"; sourceTree = "<group>"; };
 		3C8C584E07A90AB1A7C54100 /* zapperTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zapperTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +95,7 @@
 		3C8C538AD5078964A103AF89 /* themoviedb */ = {
 			isa = PBXGroup;
 			children = (
+				3C8C56BE15E03EF8A47C6619 /* ZTVTheMovieDBConstants.h */,
 			);
 			path = themoviedb;
 			sourceTree = "<group>";
